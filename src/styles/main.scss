@@ -732,8 +732,9 @@ input[type="file"].visually-hidden {
             bottom: 1px;
             left: 1px;
             z-index: 99;
-            border: 1px solid #292929;
-            border-top: none;
+            border-right: 1px solid #292929;
+            border-bottom: 1px solid #292929;
+            border-left: 1px solid #292929;
             border-radius: 0 0 13px 13px;
         }
 
@@ -744,8 +745,9 @@ input[type="file"].visually-hidden {
             right: 4px;
             bottom: 0;
             left: 0;
-            border: 1px solid #4f4f4f;
-            border-top: none;
+            border-right: 1px solid #4f4f4f;
+            border-bottom: 1px solid #4f4f4f;
+            border-left: 1px solid #4f4f4f;
             border-radius: 0 0 13px 13px;
         }
     }
