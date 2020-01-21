@@ -1,0 +1,102 @@
+.delivery {
+    margin-bottom: 40px;
+
+    .tabs {
+        border-bottom: 1px solid #d8d8d8;
+
+        &__list {
+            display: flex;
+        }
+
+        &__link {
+            position: relative;
+            bottom: -1px;
+            display: block;
+            padding: 15px 20px;
+            font-weight: 600;
+            color: #171717;
+            border-bottom: 1px solid transparent;
+
+            &:focus {
+                outline: none;
+            }
+
+            &.active,
+            &[aria-selected="true"] {
+                color: #d74516;
+                border: 1px solid #d8d8d8;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+    .delivery-methods__tabs {
+        margin-bottom: 30px;
+    }
+
+    .delivery-methods__item {
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .method {
+        padding: 0 20px;
+
+        &__block {
+            margin-bottom: 30px;
+
+            &.alert {
+                padding: 20px;
+                background-color: #fcf8e3;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h2 {
+                margin-bottom: 15px;
+                font-size: 24px;
+            }
+
+            ul {
+                padding-left: 35px;
+                list-style: square;
+            }
+
+            li {
+                margin-bottom: 3px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                margin-bottom: 1em;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+
+                th {
+                    font-weight: normal;
+                    text-align: left;
+                }
+
+                th,
+                td {
+                    padding: 6px 15px;
+                    border: 1px solid #d8d8d8;
+                }
+            }
+        }
+    }
+}

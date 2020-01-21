@@ -24,10 +24,10 @@ $(document).ready(function() {
 
 
   // Это для переключения табов
-  const tabbed = document.querySelector('.filter');
+  const tabbed = document.querySelector('.tabs');
   const tablist = tabbed.querySelector('ul');
   const tabs = tablist.querySelectorAll('a');
-  const panels = tabbed.querySelectorAll('[id^="section"]');
+  const panels = document.querySelectorAll('[id^="section"]');
 
   // tabbed.classList.remove('no-js');
 
