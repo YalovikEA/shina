@@ -34,7 +34,7 @@
 						<a class="info__link" href="#">Оплата</a>
 					</li>
 					<li class="info__item">
-						<a class="info__link" href="#">Доставка</a>
+						<a class="info__link" href="delivery.html">Доставка</a>
 					</li>
 					<li class="info__item">
 						<a class="info__link info__link--iconed info__link--stock" href="#">Акции</a>
@@ -47,7 +47,7 @@
 	<div class="page-header__middle">
 		<div class="container">
 			<div class="page-header__logo logo">
-				<a class="logo__link" href="#">
+				<a class="logo__link" href="/">
 					<img class="logo__img" src="./img/content/logo.png" alt="Поменять альт">
 				</a>
 			</div>
@@ -147,50 +147,230 @@
 							<div class="filter__tabs tabs">
 								<ul class="tabs__list" role="tablist">
 									<li class="tabs__item" role="presentation">
-										<a class="tabs__link active" role="tab" href="#section1" id="tab1" aria-selected="true">Поиск по размеру</a>
+										<a class="tabs__link" role="tab" href="#section1" id="tab1" aria-selected="true">Поиск по размеру</a>
 									</li>
 									<li class="tabs__item" role="presentation">
 										<a class="tabs__link" role="tab" href="#section2" id="tab2">Поиск по авто</a>
 									</li>
 								</ul>
 							</div>
-							<div class="filter__content">
-								<div class="filter__item filter-size" role="tabpanel" id="section1" aria-labelledby="tab1">
-									<form class="form" action="">
-										<div class="form__block">
-											<label class="form__field-title" for=""></label>
-											<select class="form__field" id="" name="">
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-											</select>
-										</div>
-										<div class="form__block">
-											<label class="form__field-title" for=""></label>
-											<select class="form__field" id="" name="">
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-											</select>
-										</div>
-										<div class="form__block">
-											<label class="form__field-title" for=""></label>
-											<select class="form__field" id="" name="">
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-											</select>
-										</div>
-										<div class="form__block form__block--submit">
-											<button class="form__submit button" type="submit">Найти шины</button>
-										</div>
-									</form>
+
+								<div class="filter__content">
+									<div class="filter__item filter-size" role="tabpanel" id="section1" aria-labelledby="tab1">
+										<form class="filter-form" method="get" action="https://shina-style.by/catalog/shiny/">
+											<div class="filter-form__block">
+												<label class="filter-form__block-title">
+													Ширина профиля
+													<select class="filter-form__select form__field" name="filter_shirina-profilya">
+														<option value=""></option>
+														<option value="31">31</option>
+														<option value="32">32</option>
+														<option value="135">135</option>
+														<option value="145">145</option>
+														<option value="155">155</option>
+														<option value="165">165</option>
+														<option value="175">175</option>
+														<option value="185">185</option>
+														<option value="195">195</option>
+														<option value="205">205</option>
+														<option value="215">215</option>
+														<option value="225">225</option>
+														<option value="235">235</option>
+														<option value="240">240</option>
+														<option value="245">245</option>
+														<option value="255">255</option>
+														<option value="265">265</option>
+														<option value="275">275</option>
+														<option value="285">285</option>
+														<option value="295">295</option>
+														<option value="305">305</option>
+														<option value="315">315</option>
+														<option value="325">325</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="filter-form__block">
+												<label class="filter-form__block-title">
+													Высота профиля
+													<select class="filter-form__select" name="filter_vysota-profilya">
+														<option value=""></option>
+														<option value="105">10,5</option>
+														<option value="115">11,5</option>
+														<option value="25">25</option>
+														<option value="30">30</option>
+														<option value="35">35</option>
+														<option value="40">40</option>
+														<option value="45">45</option>
+														<option value="50">50</option>
+														<option value="55">55</option>
+														<option value="60">60</option>
+														<option value="65">65</option>
+														<option value="70">70</option>
+														<option value="75">75</option>
+														<option value="80">80</option>
+														<option value="85">85</option>
+														<option value="90">90</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="filter-form__block">
+												<label class="filter-form__block-title">
+													Диаметр
+													<select class="filter-form__select" name="filter_diametr">
+														<option value=""></option>
+														<option value="r12">R12</option>
+														<option value="r12c">R12C</option>
+														<option value="r13">R13</option>
+														<option value="r13c">R13C</option>
+														<option value="r14">R14</option>
+														<option value="r14c">R14C</option>
+														<option value="r15">R15</option>
+														<option value="r15c">R15C</option>
+														<option value="r16">R16</option>
+														<option value="r16c">R16C</option>
+														<option value="r17">R17</option>
+														<option value="r17c">R17C</option>
+														<option value="r18">R18</option>
+														<option value="r19">R19</option>
+														<option value="r20">R20</option>
+														<option value="r21">R21</option>
+														<option value="r22">R22</option>
+														<option value="r24" >R24</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="filter-form__block">
+												<label class="filter-form__block-title">
+													Бренд
+													<select class="filter-form__select" name="filter_brend">
+														<option value=""></option>
+														<option value="achilles">Achilles</option>
+														<option value="amtel">AmteL</option>
+														<option value="antares">Antares</option>
+														<option value="barum">BARUM</option>
+														<option value="bfgoodrich">BFGoodrich</option>
+														<option value="bridgestone">BRIDGESTONE</option>
+														<option value="continental">CONTINENTAL</option>
+														<option value="cooper">Cooper</option>
+														<option value="cordiant">Cordiant</option>
+														<option value="delinte">DELINTE</option>
+														<option value="davanti">Davanti</option>
+														<option value="dayton">Dayton</option>
+														<option value="doublestar">DoubleStar</option>
+														<option value="dunlop">Dunlop</option>
+														<option value="effiplus">EFFIPLUS</option>
+														<option value="federal">Federal</option>
+														<option value="firemax">Firemax</option>
+														<option value="firestone">Firestone</option>
+														<option value="formula">Formula</option>
+														<option value="fortuna">Fortuna</option>
+														<option value="fortune">Fortune</option>
+														<option value="fulda">Fulda</option>
+														<option value="gislaved">GISLAVED</option>
+														<option value="gt-radial">GT Radial</option>
+														<option value="general">General</option>
+														<option value="goodyear">Goodyear</option>
+														<option value="gremax">Gremax</option>
+														<option value="grenlander">Grenlander</option>
+														<option value="hi-fly">HI FLY</option>
+														<option value="haida">Haida</option>
+														<option value="hankook">Hankook</option>
+														<option value="imperial">Imperial</option>
+														<option value="invovic">Invovic</option>
+														<option value="jinyu">JINYU</option>
+														<option value="kumho">KUMHO</option>
+														<option value="kama">Kama</option>
+														<option value="kingstar">Kingstar</option>
+														<option value="kleber">Kleber</option>
+														<option value="kormoran">Kormoran</option>
+														<option value="landsail">LANDSAIL</option>
+														<option value="lassa">Lassa</option>
+														<option value="laufenn">Laufenn</option>
+														<option value="linglong">LingLong</option>
+														<option value="minerva">MINERVA</option>
+														<option value="marshal">Marshal</option>
+														<option value="matador">Matador</option>
+														<option value="maxxis">Maxxis</option>
+														<option value="mazzini">Mazzini</option>
+														<option value="michelin">Michelin</option>
+														<option value="mirage">Mirage</option>
+														<option value="momo">Momo</option>
+														<option value="nexen">NEXEN</option>
+														<option value="nitto">NITTO</option>
+														<option value="nokian">NOKIAN</option>
+														<option value="nortec">Nortec</option>
+														<option value="pirelli">PIRELLI</option>
+														<option value="premiorri">Premiorri</option>
+														<option value="presa">Presa</option>
+														<option value="rosava">ROSAVA</option>
+														<option value="roadstone">Roadstone</option>
+														<option value="sailun">Sailun</option>
+														<option value="sava">Sava</option>
+														<option value="sunwide">Sunwide</option>
+														<option value="superia">Superia</option>
+														<option value="syron">Syron</option>
+														<option value="torque">TORQUE</option>
+														<option value="toyo">TOYO</option>
+														<option value="taurus">Taurus</option>
+														<option value="tigar">Tigar</option>
+														<option value="toledo">Toledo</option>
+														<option value="triangle">Triangle</option>
+														<option value="tristar">Tristar</option>
+														<option value="tunga">Tunga</option>
+														<option value="uniroyal">Uniroyal</option>
+														<option value="viking">VIKING</option>
+														<option value="vredestein">VREDESTEIN</option>
+														<option value="viatti">Viatti</option>
+														<option value="wanli">Wanli</option>
+														<option value="westlake">WestLake</option>
+														<option value="yokohama">YOKOHAMA</option>
+														<option value="zeetex">Zeetex</option>
+														<option value="zeta">Zeta</option>
+														<option value="ashk">АШК</option>
+														<option value="belshina">Белшина</option>
+														<option value="voltajr">Волтайр</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="filter-form__block">
+												<label class="filter-form__block-title">
+													Сезон
+													<select class="filter-form__select" name="filter_sezon">
+														<option value=""></option>
+														<option value="zima">Зима</option>
+														<option value="leto">Лето</option>
+														<option value="vsesezonnye">Всесезонные</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="filter-form__block filter-form__block--checkbox">
+												<label class="filter-form__block-title">
+													Шипы
+													<input class="filter-form__checkbox" type="checkbox" name="filter_shipy" value="net">
+												</label>
+												<label class="filter-form__block-title">
+													Runflat
+													<input class="filter-form__checkbox" type="checkbox" name="filter_runflat" value="net">
+												</label>
+											</div>
+
+											<div class="filter-form__block filter-form__block--submit">
+												<button class="filter-form__submit button" type="submit">Показать товары</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="filter__item filter-auto" role="tabpanel" id="section2" aria-labelledby="tab2">
+										<h3>
+											<a href="http://www.wheel-size.com" title="Wheel fitment and tire size guide and knowledge base">Wheel-Size.com</a>
+										</h3>
+									</div>
 								</div>
-								<div class="filter__item filter-auto" role="tabpanel" id="section2" aria-labelledby="tab2"></div>
-							</div>
 						</div>
 					</div>
 				</section>
