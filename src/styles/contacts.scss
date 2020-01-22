@@ -1,0 +1,124 @@
+.contacts {
+    margin-bottom: 40px;
+
+    &__info {
+        margin-bottom: 60px;
+    }
+
+    .contacts-info {
+
+        &__list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 70px;
+            margin-right: 70px;
+            padding-left: 100px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                display: block;
+                width: 70px;
+                height: 70px;
+                overflow: hidden;
+                background: #eee;
+                border-radius: 50%;
+                transform: translateY(-50%);
+            }
+
+            &--phone {
+
+                &::before {
+                    background: #eee url(../img/general/phone.svg) center/50% no-repeat;
+                }
+            }
+
+            &--email {
+
+                &::before {
+                    background: #eee url(../img/general/email.svg) center/50% no-repeat;
+                }
+            }
+        }
+
+        &__text {
+            display: block;
+            font-size: 16px;
+        }
+
+        &__link {
+            display: block;
+            font-size: 21px;
+            font-weight: 600;
+            color: #555;
+            transition: color .3s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: #d74516;
+            }
+        }
+    }
+
+    &__navigation {
+        margin-bottom: 40px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+
+        &__info {
+            width: 30%;
+            margin-bottom: 60px;
+            font-size: 16px;
+        }
+
+        &__address {
+            margin-bottom: 70px;
+
+            &-title {
+                margin: 0;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+
+            &-content {
+                font-size: 16px;
+            }
+        }
+
+        &__details {
+
+            &-title {
+                margin: 0;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+
+            &-content {
+                font-size: 16px;
+            }
+        }
+
+        &__map {
+            width: 65%;
+            min-height: 500px;
+            border: 1px solid #b8b8b8;
+        }
+    }
+}
