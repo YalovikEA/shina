@@ -2,16 +2,16 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--[if IE]><!--[if lt IE 9]>																																																		  <![endif]-->
-  <title>Оплата</title>
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->																																																		  <![endif]-->
+    <title>Оплата</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-  <div class="page-wrapper">
-    <header class="page-header">
+    <div class="page-wrapper">
+        <header class="page-header">
 	<div class="page-header__top">
 		<div class="container">
 			<div class="page-header__address address">
@@ -128,55 +128,49 @@
 </header>
 
 
-    <main class="page-content">
-      <section class="payment">
-        <div class="container">
-          <div class="payment__methods payment-methods">
-            <div class="payment-methods__tabs tabs">
-              <ul class="tabs__list" role="tablist">
-                <li class="tabs__item" role="presentation">
-                  <a class="tabs__link" role="tab" href="#section1" id="tab1" aria-selected="true">Наличными при самовывозе</a>
-                </li>
-                <li class="tabs__item" role="presentation">
-                  <a class="tabs__link" role="tab" href="#section2" id="tab2">Наличными курьеру при доставке</a>
-                </li>
-              </ul>
-            </div>
+        <main class="page-content">
+            <section class="payment">
+                <div class="container">
+                    <div class="payment__methods payment-methods accordion">
+                        <ul class="payment-methods__list accordion__list" role="tablist">
+                            <li class="payment-methods__item accordion__item" role="presentation">
+                                <a class="payment-methods__link accordion__link" role="tab" href="#section1" id="tab1" aria-selected="true">Наличными при самовывозе</a>
+                                <div class="payment-methods__content accordion__content method" role="tabpanel" id="section1" aria-labelledby="tab1">
 
-            <div class="payment-methods__content">
-              <div class="payment-methods__item method" role="tabpanel" id="section1" aria-labelledby="tab1">
+                                    <div class="method__block">
+                                        <h2>Как платить</h2>
+                                        <p>Оплата производится белорусскими рублями водителю-экспедитору при доставке либо продавцу на месте при самовывозе из магазина</p>
+                                    </div>
 
-                <div class="method__block">
-                    <h2>Как платить</h2>
-                    <p>Оплата производится белорусскими рублями водителю-экспедитору при доставке либо продавцу на месте при самовывозе из магазина</p>
+                                    <div class="method__block">
+                                        <h2>Наличный расчет</h2>
+                                        <ul>
+                                            <li>Оплата товара производится только в белорусских рублях.</li>
+                                            <li>Расчет производится непосредственно на месте.</li>
+                                            <li>При покупке товара в магазине вы экономите на доставке.</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="payment-methods__item accordion__item" role="presentation">
+                                <a class="payment-methods__link accordion__link" role="tab" href="#section2" id="tab2">Наличными курьеру при доставке</a>
+                                <div class="payment-methods__content accordion__content method" role="tabpanel" id="section2" aria-labelledby="tab2">
+                                    <div class="method__block">
+                                        <h2>Как платить</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sed provident aperiam esse numquam voluptate culpa officiis minus, autem enim quis obcaecati corporis mollitia quasi eveniet nulla dolor fuga! Ducimus corrupti doloribus placeat, eos sint mollitia iusto eaque repellendus? Magni, maiores impedit optio, adipisci culpa alias aperiam corrupti quidem debitis explicabo amet veritatis praesentium non sunt tempora labore beatae excepturi dicta assumenda. Vel exercitationem sapiente expedita modi?</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum quos necessitatibus.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero doloremque voluptate ratione officia quas in assumenda consequatur laboriosam. Nihil reiciendis nemo, dolorem ea reprehenderit quo numquam nobis ipsa, provident recusandae natus quod hic quibusdam nesciunt accusantium enim incidunt itaque nulla ducimus necessitatibus eligendi tempore adipisci! Modi natus ad porro fugit illo ullam, maxime molestias distinctio explicabo animi dolore quos nulla rerum. Incidunt quasi eveniet magni modi exercitationem. Id debitis accusamus laudantium vel rem est libero expedita, error, unde quisquam reprehenderit ipsa consequatur amet sit ducimus quam labore, impedit eaque nobis?</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="method__block">
-                    <h2>Наличный расчет</h2>
-                    <ul>
-                        <li>Оплата товара производится только в белорусских рублях.</li>
-                        <li>Расчет производится непосредственно на месте.</li>
-                        <li>При покупке товара в магазине вы экономите на доставке.</li>
-                    </ul>
-                </div>
-
-              </div>
-
-              <div class="payment-methods__item method" role="tabpanel" id="section2" aria-labelledby="tab2">
-                <div class="method__block">
-                    <h2>Как платить</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sed provident aperiam esse numquam voluptate culpa officiis minus, autem enim quis obcaecati corporis mollitia quasi eveniet nulla dolor fuga! Ducimus corrupti doloribus placeat, eos sint mollitia iusto eaque repellendus? Magni, maiores impedit optio, adipisci culpa alias aperiam corrupti quidem debitis explicabo amet veritatis praesentium non sunt tempora labore beatae excepturi dicta assumenda. Vel exercitationem sapiente expedita modi?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum quos necessitatibus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero doloremque voluptate ratione officia quas in assumenda consequatur laboriosam. Nihil reiciendis nemo, dolorem ea reprehenderit quo numquam nobis ipsa, provident recusandae natus quod hic quibusdam nesciunt accusantium enim incidunt itaque nulla ducimus necessitatibus eligendi tempore adipisci! Modi natus ad porro fugit illo ullam, maxime molestias distinctio explicabo animi dolore quos nulla rerum. Incidunt quasi eveniet magni modi exercitationem. Id debitis accusamus laudantium vel rem est libero expedita, error, unde quisquam reprehenderit ipsa consequatur amet sit ducimus quam labore, impedit eaque nobis?</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
+        <footer class="page-footer">
 		<div class="container">
 	<div class="page-footer__top">
 			<div class="page-footer__menu footer-menu">
@@ -200,10 +194,10 @@
 				<h3 class="footer-menu__title">Покупателю</h3>
 				<ul class="footer-menu__list">
 					<li class="footer-menu__item">
-						<a class="footer-menu__link" href="#">Условия оплаты</a>
+						<a class="footer-menu__link" href="payment.html">Условия оплаты</a>
 					</li>
 					<li class="footer-menu__item">
-						<a class="footer-menu__link" href="#">Условия доставки</a>
+						<a class="footer-menu__link" href="delivery.html">Условия доставки</a>
 					</li>
 					<li class="footer-menu__item">
 						<a class="footer-menu__link" href="#">Гарантия на товар</a>
@@ -256,10 +250,10 @@
 	</div>
 </footer>
 
-  </div>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
