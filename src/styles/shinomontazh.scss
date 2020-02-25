@@ -1,0 +1,180 @@
+.inner-page {
+
+    .page-content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    .article {
+        flex-grow: 1;
+    }
+
+    .aside {
+        position: sticky;
+        top: 24px;
+        flex-shrink: 0;
+        align-self: start;
+        width: 250px;
+        margin-left: 30px;
+    }
+
+    .services {
+
+        &__description {
+            margin-bottom: 24px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            margin-bottom: 24px;
+            padding: 0;
+            list-style: none;
+        }
+
+        &__item {
+            width: 25%;
+        }
+
+        &__item-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            min-height: 165px;
+            padding: 30px 20px;
+            border: 1px solid #f0f0f0;
+            transition: all .3s ease-in-out;
+
+            &:hover,
+            &:focus {
+                background-color: #fff;
+                border-color: #fff;
+                box-shadow: 0 0 20px rgba(0,0,0,.1);
+
+                .services__item-img {
+                    fill: #d74516;
+                }
+
+                .services__item-title {
+                    color: #d74516;
+                }
+            }
+        }
+
+        &__item-img {
+            width: 45px;
+            height: 45px;
+            margin-bottom: 12px;
+            transition: all .3s ease-in-out;
+            fill: #333;
+        }
+
+        &__item-title {
+            font-weight: 400;
+            text-align: center;
+            color: #555;
+            transition: all .3s ease-in-out;
+        }
+
+        &__gallery {
+            margin-bottom: 24px;
+
+            & img {
+                width: 100%;
+                height: auto;
+
+                object-fit: cover;
+            }
+        }
+
+        &__action {
+            margin-bottom: 24px;
+        }
+
+        &__content {
+            font-size: 16px;
+            color: #555;
+        }
+    }
+
+    .aside-nav {
+        margin-bottom: 24px;
+
+        &__title {
+            padding: 10px 21px;
+            font-weight: normal;
+            color: #fff;
+            background-color: #d74516;
+        }
+
+        &__link {
+            position: relative;
+            display: flex;
+            padding: 10px 20px;
+            color: #555;
+            border: 1px solid #f0f0f0;
+            border-top: none;
+            transition: all .3s ease-in-out;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -1px;
+                bottom: -1px;
+                left: -1px;
+                width: 3px;
+                background: transparent;
+                transition: all .2s ease-in-out;
+            }
+
+            &:hover,
+            &:focus {
+                color: #d74516;
+
+                &::before {
+                    background: #d74516;
+                }
+            }
+        }
+    }
+
+    .aside-signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 40px;
+        background: #fbfbfb;
+        border: 1px solid #f0f0f0;
+
+        &::before {
+            content: "";
+            display: flex;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 24px;
+            background: url("../img/general/help.svg") center/cover no-repeat;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        &__btn {
+            margin-bottom: 24px;
+            padding: 10px 15px;
+        }
+
+        &__description {
+            text-align: center;
+        }
+    }
+}

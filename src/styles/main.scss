@@ -6,6 +6,8 @@
 
 @import "components/variables.scss";
 
+@import "shinomontazh.scss";
+
 *,
 *::before,
 *::after {
@@ -114,6 +116,12 @@ textarea {
     &:active {
         top: 2px;
         box-shadow: none;
+    }
+
+    &_secondary {
+        color: #fff;
+        background: #5aac44;
+        box-shadow: 0 2px 0 0 #3c792b;
     }
 }
 
