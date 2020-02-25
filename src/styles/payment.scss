@@ -1,0 +1,191 @@
+.payment {
+    margin-bottom: 40px;
+
+    .payment-methods {
+
+        @media (max-width: 767px) {
+            border: 1px solid #d8d8d8;
+            border-bottom-color: transparent;
+        }
+
+        &__list {
+            font-size: 0;
+
+            &::before,
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+
+        &__item {
+            display: inline;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+
+        &__link {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #171717;
+            border: 1px solid #d8d8d8;
+
+            @media (max-width: 767px) {
+                flex-direction: row;
+                width: 100%;
+                padding: 10px 15px;
+                font-weight: 400;
+                border: 1px solid transparent;
+                border-bottom: 1px solid #d8d8d8;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                width: 70px;
+                height: 70px;
+                margin-bottom: 20px;
+                background-color: #eee;
+                border-radius: 50%;
+
+                @media (max-width: 767px) {
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 20px;
+                    margin-bottom: initial;
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &.active,
+            &[aria-selected="true"] {
+                color: #d74516;
+
+                @media (max-width: 767px) {
+                    background-color: #f5f5f5;
+                    border-color: transparent;
+                }
+
+                &#tab1 {
+
+                    &::before {
+                        background: url(../img/general/payment-bag-active.svg) center/contain no-repeat;
+                    }
+                }
+
+                &#tab2 {
+
+                    &::before {
+                        background: url(../img/general/payment-delivery-active.svg) center/contain no-repeat;
+                    }
+                }
+            }
+
+            &#tab1 {
+                border-right-color: transparent;
+
+                &::before {
+                    background: url(../img/general/payment-bag.svg) center/contain no-repeat;
+                }
+            }
+
+            &#tab2 {
+
+                &::before {
+                    background: url(../img/general/payment-delivery.svg) center/contain no-repeat;
+                }
+            }
+        }
+
+        &__content {
+            float: left;
+            width: 100%;
+            padding: 20px 20px 0;
+            font-size: 16px;
+            animation: fade-in .33s 1 ease-in-out forwards;
+
+            @media (max-width: 767px) {
+                float: initial;
+                padding: 15px;
+                font-size: 14px;
+                border-bottom: 1px solid #d8d8d8;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .method {
+
+        &__block {
+            margin-bottom: 30px;
+
+            &.alert {
+                padding: 20px;
+                background-color: #fcf8e3;
+
+                @media (max-width: 767px) {
+                    padding: 15px;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h2 {
+                margin-bottom: 15px;
+                font-size: 24px;
+
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+
+            ul {
+                padding-left: 35px;
+                list-style: square;
+
+                @media (max-width: 767px) {
+                    padding-left: 15px;
+                }
+            }
+
+            li {
+                margin-bottom: 3px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                margin-bottom: 1em;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

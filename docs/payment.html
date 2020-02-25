@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->																																																		  <![endif]-->
+    <title>Оплата</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="page-header">
+	<div class="page-header__top">
+		<div class="container">
+			<div class="page-header__address address">
+				<a class="address__link" href="#">г.Минск, Авторынок Малиновка, Меньковский тракт 2а</a>
+			</div>
+			<div class="page-header__action">
+				<button class="page-header__action-btn button">Обратный звонок</button>
+			</div>
+			<div class="page-header__info info">
+				<ul class="info__list">
+					<li class="info__item">
+						<a class="info__link" href="payment.html">Оплата</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link" href="delivery.html">Доставка</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link info__link--iconed info__link--stock" href="#">Акции</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-header__middle">
+		<div class="container">
+			<div class="page-header__logo logo">
+				<a class="logo__link" href="/">
+					<img class="logo__img" src="./img/content/logo.png" alt="Поменять альт">
+				</a>
+			</div>
+			<div class="page-header__contacts contacts">
+				<div class="contacts__phones phones">
+					<ul class="phones__list">
+						<li class="phones__item">
+							<a class="phones__link" href="tel:+375333597000">+375 33 359 7000</a>
+						</li>
+						<li class="phones__item">
+							<a class="phones__link" href="tel:+375293597000">+375 29 359 7000</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts__time time">
+					<p>
+						Время работы: с 8:00 до 20:00
+						<br>
+						Работаем без выходных!
+					</p>
+				</div>
+			</div>
+			<div class="page-header__search">
+				<div class="search-form">
+					<form action="">
+						<div class="search-form__block">
+							<label class="search-form__field-title"></label>
+							<input class="search-form__field" type="text" placeholder="Найти шины или диски...">
+						</div>
+						<div class="search-form__block search-form__block--submit">
+							<button class="search-form__submit button">Найти</button>
+						</div>
+					</form>
+				</div>
+                <button class="search-form__toggle" aria-label="Показать/скрыть форму поиска"></button>
+			</div>
+			<div class="page-header__cart cart">
+				<a class="cart__link" href="#">
+					<span class="cart__status">Корзина пуста</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-header__bottom">
+		<div class="container">
+			<nav class="page-header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link nav__link--tyres" href="#">Шины</a>
+						<ul class="nav__sub-menu">
+							<li class="nav__sub-item">
+								<a class="nav__sub-link" href="#">Что-то</a>
+							</li>
+							<li class="nav__sub-item">
+								<a class="nav__sub-link" href="#">Что-то</a>
+							</li>
+							<li class="nav__sub-item">
+								<a class="nav__sub-link" href="#">Что-то</a>
+							</li>
+							<li class="nav__sub-item">
+								<a class="nav__sub-link" href="#">Что-то</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--wheels" href="#">Диски</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--other" href="#">Другие товары</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--services" href="#">Шиномонтаж</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--customers" href="#">Покупателям</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--contacts" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+</header>
+
+
+        <main class="page-content">
+            <section class="payment">
+                <div class="container">
+                    <div class="payment__methods payment-methods accordion">
+                        <ul class="payment-methods__list accordion__list" role="tablist">
+                            <li class="payment-methods__item accordion__item" role="presentation">
+                                <a class="payment-methods__link accordion__link" role="tab" href="#section1" id="tab1" aria-selected="true">Наличными при самовывозе</a>
+                                <div class="payment-methods__content accordion__content method" role="tabpanel" id="section1" aria-labelledby="tab1">
+
+                                    <div class="method__block">
+                                        <h2>Как платить</h2>
+                                        <p>Оплата производится белорусскими рублями водителю-экспедитору при доставке либо продавцу на месте при самовывозе из магазина</p>
+                                    </div>
+
+                                    <div class="method__block">
+                                        <h2>Наличный расчет</h2>
+                                        <ul>
+                                            <li>Оплата товара производится только в белорусских рублях.</li>
+                                            <li>Расчет производится непосредственно на месте.</li>
+                                            <li>При покупке товара в магазине вы экономите на доставке.</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="payment-methods__item accordion__item" role="presentation">
+                                <a class="payment-methods__link accordion__link" role="tab" href="#section2" id="tab2">Наличными курьеру при доставке</a>
+                                <div class="payment-methods__content accordion__content method" role="tabpanel" id="section2" aria-labelledby="tab2">
+                                    <div class="method__block">
+                                        <h2>Как платить</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sed provident aperiam esse numquam voluptate culpa officiis minus, autem enim quis obcaecati corporis mollitia quasi eveniet nulla dolor fuga! Ducimus corrupti doloribus placeat, eos sint mollitia iusto eaque repellendus? Magni, maiores impedit optio, adipisci culpa alias aperiam corrupti quidem debitis explicabo amet veritatis praesentium non sunt tempora labore beatae excepturi dicta assumenda. Vel exercitationem sapiente expedita modi?</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum quos necessitatibus.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero doloremque voluptate ratione officia quas in assumenda consequatur laboriosam. Nihil reiciendis nemo, dolorem ea reprehenderit quo numquam nobis ipsa, provident recusandae natus quod hic quibusdam nesciunt accusantium enim incidunt itaque nulla ducimus necessitatibus eligendi tempore adipisci! Modi natus ad porro fugit illo ullam, maxime molestias distinctio explicabo animi dolore quos nulla rerum. Incidunt quasi eveniet magni modi exercitationem. Id debitis accusamus laudantium vel rem est libero expedita, error, unde quisquam reprehenderit ipsa consequatur amet sit ducimus quam labore, impedit eaque nobis?</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+		<div class="container">
+	<div class="page-footer__top">
+			<div class="page-footer__menu footer-menu">
+				<h3 class="footer-menu__title">Каталог</h3>
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Шины</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Грузовые шины</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Диски</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Акции</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__menu footer-menu">
+				<h3 class="footer-menu__title">Покупателю</h3>
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="payment.html">Условия оплаты</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="delivery.html">Условия доставки</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Гарантия на товар</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Дисконтная программа</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__menu footer-menu">
+				<h3 class="footer-menu__title">О компании</h3>
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Новости</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Статьи</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Вакансии</a>
+					</li>
+					<li class="footer-menu__item">
+						<a class="footer-menu__link" href="#">Политика</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__menu footer-menu">
+				<h3 class="footer-menu__title">Наши контакты</h3>
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item footer-menu__item--phone">
+						<a class="footer-menu__link" href="tel:+375333597000">+375 33 359 7000</a>
+						<a class="footer-menu__link" href="tel:+375293597000">+375 29 359 7000</a>
+					</li>
+					<li class="footer-menu__item footer-menu__item--email">
+						<a class="footer-menu__link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+					</li>
+					<li class="footer-menu__item footer-menu__item--address">
+						<address>
+							Адрес: г.Минск, Авторынок Малиновка, Меньковский тракт 2а
+						</address>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<div class="page-footer__bottom">
+		<div class="page-footer__copyright">
+      2005-2019 © Сеть шинных и сервисных центров
+    </div>
+	</div>
+	</div>
+</footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
